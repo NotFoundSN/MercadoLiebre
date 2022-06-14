@@ -1,14 +1,16 @@
 /* IMPORTS */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
-/* NORMALIZACIÓN */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
+/*************/
 /* VARIABLES */
+/*************/
 
 :root {
   /* colores */
@@ -21,16 +23,18 @@
   --verde: #39b54a;
   --negro: #000000;
   --blanco: #ffffff;
-  /* tamaños de fuentes */
+  /* fuentes */
   --text-sm: 1.2em;
   --text-md: 1.6em;
   --text-lg: 1.8em;
   --title-md: 2.4em;
-  /* familias de fuentes */
   --roboto: "Roboto", sans-serif;
 }
 
-/* ESTILOS COMUNES */
+
+/***********/
+/* ESTILOS */
+/***********/
 
 html {
   font-size: 62.5%;
@@ -76,7 +80,10 @@ p {
   background-color: var(--azul-claro);
 }
 
-/* CABECERA */
+
+/**********/
+/* HEADER */
+/**********/
 
 header {
   background-color: var(--amarillo);
@@ -171,13 +178,19 @@ div.burger-menu i {
   border-radius: 5px;
 }
 
+
+/**********/
 /* BANNER */
+/**********/
 
 section.banner img {
-  width: 100%;
+  width: 100vw;
 }
 
+
+/********/
 /* MAIN */
+/********/
 
 main {
   width: 90%;
@@ -204,7 +217,6 @@ h2,
 
 .price {
   font-size: var(--text-lg);
-  /* width: 30%; */
 }
 
 .discount,
@@ -225,10 +237,6 @@ main section article i,
 .discount {
   color: var(--verde);
 }
-/* 
-.discount {
-  width: 70%;
-} */
 
 main section article i {
   font-size: var(--text-md);
@@ -260,7 +268,10 @@ article div.product-card {
   position: relative;
 }
 
+
+/*********/
 /* LOGIN */
+/*********/
 
 .login {
   background-color: var(--gris-claro);
@@ -299,7 +310,10 @@ article div.product-card {
   color: var(--gris-oscuro);
 }
 
+
+/************/
 /* REGISTER */
+/************/
 
 .register {
   padding-top: 1.6em;
@@ -373,7 +387,10 @@ article div.product-card {
   gap: 2em;
 }
 
+
+/*********/
 /* FOOTER*/
+/*********/
 
 footer {
   margin: 0 auto;
@@ -405,7 +422,10 @@ footer {
   padding: 8px;
 }
 
+
+/**************/
 /* RESPONSIVE */
+/**************/
 
 @media screen and (min-width: 361px) {
   .burger-menu {
@@ -455,9 +475,6 @@ footer {
     max-width: 45%;
   }
 
-  /* main section article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  } */
 }
 
 @media screen and (min-width: 769px) {
